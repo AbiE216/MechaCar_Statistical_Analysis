@@ -70,3 +70,30 @@ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’
 Residual standard error: 8.774 on 44 degrees of freedom
 Multiple R-squared:  0.7149,	Adjusted R-squared:  0.6825 
 F-statistic: 22.07 on 5 and 44 DF,  p-value: 5.35e-11
+
+
+
+> suspension_data<- read.csv(file='Suspension_Coil.csv',check.names = F, stringsAsFactors = F)
+> setwd("C:/Users/Artsy/Desktop/MechaCar_Statistical_Analysis")
+> 
+> suspension_data<- read.csv(file='Suspension_Coil.csv',check.names = F, stringsAsFactors = F)
+> View(suspension_data)
+> 
+> View(suspension_data)
+> total_summary <- suspension_data %>% summarise(Mean_PSI = mean(PSI), Median_PSI = median(PSI), PSI_Variance = var(PSI), )
+> total_summary
+  Mean_PSI Median_PSI PSI_Variance
+1  1498.78       1500     62.29356
+> total_summary <- suspension_data %>% summarise(Mean_PSI=mean(PSI),Median_PSI=median(PSI),PSI_Variance=var(PSI),SD_PSI=sd(PSI) )
+> total_summary
+  Mean_PSI Median_PSI PSI_Variance   SD_PSI
+1  1498.78       1500     62.29356 7.892627
+> 
+> lot_summary <- suspension_data %>% group_by(Manufacturing_Lot)%>% summarise(Mean_PSI=mean(PSI),Median_PSI=median(PSI),PSI_Variance=var(PSI),SD_PSI=sd(PSI) )
+> lot_summary
+# A tibble: 3 × 5
+  Manufacturing_Lot Mean_PSI Median_PSI PSI_Variance SD_PSI
+  <chr>                <dbl>      <dbl>        <dbl>  <dbl>
+1 Lot1                 1500       1500         0.980  0.990
+2 Lot2                 1500.      1500         7.47   2.73 
+3 Lot3                 1496.      1498.      170.    13.0
