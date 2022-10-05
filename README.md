@@ -15,7 +15,7 @@ This set of data examines the PSI mean, median, variance, and standard deviation
 ### t-Tests on Suspension Coils
 ![PSI_tTest](https://user-images.githubusercontent.com/106715300/194179158-82aca9f7-936f-48e7-8f55-305947c5504d.png)
 The t-Tests performed here show the difference in P-values based on how the lot affects the PSI for any given car, and thus a null hypothesis and alternative hypotheis are created, per the image above: alternative hypothesis: true mean is not equal to 1500. 
-For Lot 1 and Lot 2, the p-values are well above the 5% confidence level, which suggests that we reject the alternate hypothesis and accept the Null. For Lot 3, the p-value sits at 4.2% which is below the 5% confidence interval, meaning we accept the alternative hypothesis. The PSI for lot 3 is outside of the normal mean. Which fits with the above conclusion. 
+For Lot 1 and Lot 2, the p-values are well above the 5% confidence level, which suggests that we reject the alternate hypothesis and accept the Null. For Lot 3, the p-value sits at 4.2% which is below the 5% confidence interval, meaning we accept the alternative hypothesis. The PSI for lot 3 is outside of the normal mean. Which fits with the above conclusion.  
 
 
 
