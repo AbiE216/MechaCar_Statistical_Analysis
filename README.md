@@ -15,7 +15,16 @@ This set of data examines the PSI mean, median, variance, and standard deviation
 ### t-Tests on Suspension Coils
 ![PSI_tTest](https://user-images.githubusercontent.com/106715300/194179158-82aca9f7-936f-48e7-8f55-305947c5504d.png)
 The t-Tests performed here show the difference in P-values based on how the lot affects the PSI for any given car, and thus a null hypothesis and alternative hypotheis are created, per the image above: alternative hypothesis: true mean is not equal to 1500. 
-For Lot 1 and Lot 2, the p-values are well above the 5% confidence level, which suggests that we reject the alternate hypothesis and accept the Null. For Lot 3, the p-value sits at 4.2% which is below the 5% confidence interval, meaning we accept the alternative hypothesis. The PSI for lot 3 is outside of the normal mean. Which fits with the above conclusion.  
+For Lot 1 and Lot 2, the p-values are well above the 5% confidence level, which suggests that we reject the alternate hypothesis and accept the Null. For Lot 3, the p-value sits at 4.2% which is below the 5% confidence interval, meaning we accept the alternative hypothesis. The PSI for lot 3 is outside of the normal mean. Which fits with the above conclusion. 
+
+## Study Design: MechaCar vs Competition
+### Metrics:
+The most important Metrics when I look at cars are safety, gas mileage, cost, and maintaince needs. A car that needs a lot of maintainance or has a track record of falling apart quickly is not something most people want. Spending less where possible as well as spending less on gas are also important. Safety especially involving female drivers are an important factor. 
+### Null and Alternative Hypothesis:
+Null: MechaCar performs the same as its competition with a 95% confidence interval. 
+Alternative: MechaCar does not perform the same as it competition, either better or worse. 
+### Statistical test for hypothesis testing. 
+I want to start with linear regression, this allows me to look at p-values for each of the variables above and decide what is significant. Then I want to use scatter plots and line of fit to ensure that variables are tested as separately as possible. Finally I want to use a two tailed t-test, to measure p-value for safety features against both car companies; specifically this test should show if MechaCar performs either better or worse compared to the competitor. 
 
 
 
