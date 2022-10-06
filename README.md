@@ -1,7 +1,7 @@
 # MechaCar_Statistical_Analysis
 
 ## Purpose
-
+To take given data and perform various statistical analysis across variables. 
 ## Summary 
 ### Linear Regression to Predict MPG
 ![Linear Regression MPG](https://user-images.githubusercontent.com/106715300/193467448-3510e357-306d-4014-aae0-e9e590ab4ae6.png)
@@ -23,9 +23,12 @@ The most important Metrics when I look at cars are safety, gas mileage, cost, an
 ### Null and Alternative Hypothesis:
 Null: MechaCar performs the same as its competition with a 95% confidence interval. 
 Alternative: MechaCar does not perform the same as it competition, either better or worse. 
-### Statistical test for hypothesis testing. 
+### Statistical test for hypothesis testing: 
 I want to start with linear regression, this allows me to look at p-values for each of the variables above and decide what is significant. Then I want to use scatter plots and line of fit to ensure that variables are tested as separately as possible. Finally I want to use a two tailed t-test, to measure p-value for safety features against both car companies; specifically this test should show if MechaCar performs either better or worse compared to the competitor. 
-
+### Data needed:
+Safety measures should include crash safety measures across varying dummy sizes, there are several kinds of crashes performed, it may or may not be worth the time to examine each kind of crash, or if an average is better. 
+For gas mileage, average MPG per model would be good. Cost is simple, the MSRP per model can be compared. 
+Maintaince is better done by collecting reviews from forums and other areas, comparing the complaints between the cars, and adding in recall history are both good in comparison for which company is better. 
 
 
 
