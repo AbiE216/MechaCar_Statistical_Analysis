@@ -136,9 +136,7 @@ mean of x
 
 > lot1 <- subset(suspension_data, Manufacturing_Lot == "Lot1")
 > lot2 <- subset(suspension_data, Manufacturing_Lot == "Lot2")
-> 
 > lot3 <- subset(suspension_data, Manufacturing_Lot == "Lot3")
-> 
 > t.test(lot1$PSI, mu=1500)
 
 	One Sample t-test
